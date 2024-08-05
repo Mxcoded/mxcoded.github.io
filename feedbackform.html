@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: azure;
+            font-family: "Gotham Light";
+        }
+        .rating-icons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .rating-icons span {
+            flex: 1;
+            text-align: center;
+        }
+        .form-check-input {
+            position: relative;
+            margin: 0 auto;
+            display: block;
+        }
+        .table td, .table th {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .table td:first-child {
+            text-align: left;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="logo"><img src="bplogo.png" alt="brickspoint_logo" width="200px"></div>
+        <h2 class="text-center">FEEDBACK FORM</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="tel">Tel no:</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Enter your telephone number">
+            </div>
+            <div class="form-group">
+                <label for="room">Room no:</label>
+                <input type="text" class="form-control" id="room" placeholder="Enter your room number">
+            </div>
+
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>SERVICE AREA EXPERIENCE</th>
+                        <th>😞</th>
+                        <th>😐</th>
+                        <th>🙂</th>
+                        <th>😄</th>
+                        <th>😃</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Reservation & Reception</td>
+                        <td><input class="form-check-input" type="radio" name="reservation" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="reservation" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="reservation" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="reservation" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="reservation" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>2. General Atmosphere & Cleanness</td>
+                        <td><input class="form-check-input" type="radio" name="atmosphere" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="atmosphere" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="atmosphere" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="atmosphere" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="atmosphere" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Housekeeping & Laundry Service</td>
+                        <td><input class="form-check-input" type="radio" name="housekeeping" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="housekeeping" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="housekeeping" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="housekeeping" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="housekeeping" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Food and Beverage (Service Menu & Presentation)</td>
+                        <td><input class="form-check-input" type="radio" name="food" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="food" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="food" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="food" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="food" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Recreations Pool and Spa Center</td>
+                        <td><input class="form-check-input" type="radio" name="recreations" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="recreations" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="recreations" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="recreations" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="recreations" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>6. Internet / TV Channels</td>
+                        <td><input class="form-check-input" type="radio" name="internet" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="internet" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="internet" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="internet" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="internet" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>7. Location and Surroundings</td>
+                        <td><input class="form-check-input" type="radio" name="location" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="location" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="location" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="location" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="location" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td>8. Meeting conference & events halls</td>
+                        <td><input class="form-check-input" type="radio" name="meeting" value="0"></td>
+                        <td><input class="form-check-input" type="radio" name="meeting" value="1"></td>
+                        <td><input class="form-check-input" type="radio" name="meeting" value="2"></td>
+                        <td><input class="form-check-input" type="radio" name="meeting" value="3"></td>
+                        <td><input class="form-check-input" type="radio" name="meeting" value="4"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-group">
+                <label>Would you recommend us to your family, friends, and business partners?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="yes">
+                    <label class="form-check-label" for="recommendYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="no">
+                    <label class="form-check-label" for="recommendNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Would you be interested to share with us a lead to contact and promote our services? If yes:</label>
+                <div class="form-group">
+                    <label for="leadName">Name:</label>
+                    <input type="text" class="form-control" id="leadName" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="Enter company name">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="text" class="form-control" id="contact" placeholder="Enter contact information">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Recommendation and Comment for Improvement:</label>
+                <textarea class="form-control" id="comments" rows="3" placeholder="Enter your comments"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
