@@ -52,15 +52,17 @@
         <form action="https://formspree.io/f/xgvwyekg" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <input type="text" class="form-control" id="name" name="guest_full_name" placeholder="Enter your name">
             </div>
             <div class="form-group">
                 <label for="tel">Tel no:</label>
-                <input type="tel" class="form-control" id="tel" placeholder="Enter your telephone number">
+                <input type="tel" class="form-control" id="tel" name="guest_phone_number"
+                    placeholder="Enter your telephone number">
             </div>
             <div class="form-group">
                 <label for="room">Room no:</label>
-                <input type="text" class="form-control" id="room" placeholder="Enter your room number">
+                <input type="text" class="form-control" id="room" name="guest_room_no"
+                    placeholder="Enter your room number">
             </div>
 
             <table class="table table-bordered">
@@ -159,21 +161,24 @@
                     yes:</label>
                 <div class="form-group">
                     <label for="leadName">Name:</label>
-                    <input type="text" class="form-control" id="leadName" placeholder="Enter name">
+                    <input type="text" class="form-control" id="leadName" name="lead_name" placeholder="Enter name">
                 </div>
                 <div class="form-group">
                     <label for="companyName">Company Name:</label>
-                    <input type="text" class="form-control" id="companyName" placeholder="Enter company name">
+                    <input type="text" class="form-control" id="companyName" name="company_name"
+                        placeholder="Enter company name">
                 </div>
                 <div class="form-group">
                     <label for="contact">Contact:</label>
-                    <input type="text" class="form-control" id="contact" placeholder="Enter contact information">
+                    <input type="text" class="form-control" id="contact" name="lead_contact"
+                        placeholder="Enter contact information">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="comments">Recommendation and Comment for Improvement:</label>
-                <textarea class="form-control" id="comments" rows="3" placeholder="Enter your comments"></textarea>
+                <textarea class="form-control" id="comments" name="comments" rows="3"
+                    placeholder="Enter your comments"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
