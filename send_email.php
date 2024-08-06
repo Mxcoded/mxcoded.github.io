@@ -34,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email->isSMTP();
         $email->Host = 'smtp.brickspoint.com';
         $email->SMTPAuth = true;
-        $email->Username = 'no-reply@brickspoint.com';
-        $email->Password = 'your_password';
+        $email->Username = 'it@brickspoint.com';
+        $email->Password = 'Brk@Point';
         $email->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $email->Port = 465;
 
