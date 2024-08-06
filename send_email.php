@@ -32,17 +32,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         // Server settings
         $email->isSMTP();
-        $email->Host = 'smtp.example.com';
+        $email->Host = 'smtp.brickspoint.com';
         $email->SMTPAuth = true;
-        $email->Username = 'your_email@example.com';
+        $email->Username = 'no-reply@brickspoint.com';
         $email->Password = 'your_password';
         $email->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $email->Port = 587;
+        $email->Port = 465;
 
         // Recipients
-        $email->setFrom('from@example.com', 'Feedback Form');
-        $email->addAddress('recipient1@example.com');
-        $email->addAddress('recipient2@example.com'); // Add more recipients as needed
+        $email->setFrom('no-reply@brickspoint.com', 'Feedback Form');
+        $email->addAddress('gm@brickspoint.com');
+        $email->addAddress('it@brickspoint.com'); // Add more recipients as needed
 
         // Content
         $email->isHTML(true);
