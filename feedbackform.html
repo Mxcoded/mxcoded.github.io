@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,48 @@
     <link rel="shortcut icon" href="bpicon.jpg" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{
+        body {
             background-color: azure;
             font-family: "Gotham Light";
         }
+
         .rating-icons {
             display: flex;
             justify-content: space-between;
         }
+
         .rating-icons span {
             flex: 1;
             text-align: center;
         }
+
         .form-check-input {
             position: relative;
             margin: 0 auto;
             display: block;
         }
-        .table td, .table th {
+
+        .table td,
+        .table th {
             text-align: center;
             vertical-align: middle;
         }
+
         .table td:first-child {
             text-align: left;
         }
+
         .form-group label {
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <div class="container mt-5">
         <div class="logo"><img src="bplogo.png" alt="brickspoint_logo" width="200px"></div>
         <h2 class="text-center">FEEDBACK FORM</h2>
-        <form action="send_email.php" method="post">
+        <form action="https://formspree.io/f/xgvwyekg" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -146,7 +155,8 @@
             </div>
 
             <div class="form-group">
-                <label>Would you be interested to share with us a lead to contact and promote our services? If yes:</label>
+                <label>Would you be interested to share with us a lead to contact and promote our services? If
+                    yes:</label>
                 <div class="form-group">
                     <label for="leadName">Name:</label>
                     <input type="text" class="form-control" id="leadName" placeholder="Enter name">
@@ -174,4 +184,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
